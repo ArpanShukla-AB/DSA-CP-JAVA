@@ -26,9 +26,12 @@ public class undirectedGraph{
         // Print the adjacency matrix
         for (int i = 0; i < graph.V; i++) {
             for (int j = 0; j < graph.V; j++) {
+
+                
                 System.out.print(graph.adjMatrix[i][j] + " ");
             }
             System.out.println();
+
         }
     }
 }
