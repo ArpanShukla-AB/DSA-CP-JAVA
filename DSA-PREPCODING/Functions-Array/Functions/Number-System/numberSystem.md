@@ -21,3 +21,5 @@ Conversion
 (57)10 -<> ()2
 divide by 2
 write from downwards
+
+If we have to convert from any base so divide by required base
