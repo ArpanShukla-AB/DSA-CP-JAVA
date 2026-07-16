@@ -587,3 +587,60 @@ Additional Resources
 Detailed Explanation on Loops - GeeksforGeeks
 Interactive C++ Compiler
 For expanded explanations and animated examples, watch the attached video lecture above. Understanding loops thoroughly is crucial as they underpin many sophisticated algorithms in computer science. Happy coding!
+
+
+
+
+Lecture Summary
+In this session, we explore the do-while loop and nested loops. These are fundamental constructs in C++ programming, particularly when dealing with iterative processes. Understanding these structures is crucial for writing efficient and readable code.
+
+Do-While Loop
+The do-while loop executes a block of code at least once, and then continues executing as long as a specified condition is true. This is particularly useful when the loop needs to run at least once regardless of the condition.
+
+Syntax:
+
+cpp
+
+do {
+    // Code block to be executed
+} while (condition);
+Key Components:
+The keyword do precedes the code block to be executed.
+A while statement follows the block, containing the condition to check.
+The loop will execute as long as the condition evaluates to true.
+Example:
+
+cpp
+
+int i = 0;
+do {
+    cout << i << " ";
+    i++;
+} while (i < 5);
+In this example, numbers 0 to 4 will be printed. Note that the condition is checked after the loop runs, ensuring the block executes at least once.
+
+Nested Loops
+Nested loops are loops within loops, allowing us to execute a sequence of operations several times over different sets of data.
+
+Example:
+
+cpp
+
+for (int i = 0; i < 3; i++) {
+    for (int j = 0; j < 2; j++) {
+        cout << "i: " << i << ", j: " << j << endl;
+    }
+}
+Explanation:
+
+The outer loop (for i) runs three times.
+For each iteration of the outer loop, the inner loop (for j) runs two times.
+This results in a total of 6 iterations, demonstrating the multiplication of iterations typical of nested loops.
+Common Mistakes
+Infinite Loops: Ensure the loop's condition eventually evaluates to false.
+Off-by-One Errors: Remember that loops like for and while use zero-based counting.
+Misplaced Semi-Colons: Avoid placing a semicolon directly after the condition or loop header, as it ends the loop statement unexpectedly.
+For a deeper understanding and live coding practice, access our quick compiler here: Online IDE.
+
+Additional Resources
+Watch the video linked for an exhaustive explanation and further examples covering these loops.
