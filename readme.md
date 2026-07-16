@@ -220,3 +220,79 @@ Additional Resources
 To experiment with C++ code online and see how variables and datatypes work in real-time, visit the Codehelp Quick Compiler.
 
 By understanding variables and datatypes, you build a strong foundation for creating complex programs. Each datatype serves unique roles, and knowing when and how to use them is essential for efficient programming.
+
+
+
+
+
+Lesson Summary
+Lecture Summary
+This session delves into how user input is handled in C++. We'll explore the use of the cin keyword, understand the >> and << operators in the context of cin and cout, and learn about several variations of cin such as cin.ignore(), getline(), and more.
+
+Taking Input in C++
+In C++, user input is primarily captured using the cin keyword, short for Console Input. It works in conjunction with the extraction operator >> to read data from the standard input (usually the keyboard) into program variables.
+
+cpp
+
+#include <iostream>
+
+int main() {
+    int number;
+    std::cout << "Enter a number: ";
+    std::cin >> number;
+    std::cout << "You entered: " << number << std::endl;
+    return 0;
+}
+In the above example, the user is prompted to enter a number. The >> operator extracts the data from the input buffer and stores it in the variable number.
+
+Understanding Operators: >> and <<
+>> (Extraction Operator): Used with cin to extract data from the input stream and store it in a variable.
+<< (Insertion Operator): Used with cout to send data to the output stream for displaying on the console.
+Variations of cin
+C++ offers other input methods to handle specific situations, making input handling more flexible:
+
+cin.ignore(): This function is used to ignore characters in the input buffer. It's especially useful when dealing with mixed input types or to discard unwanted data like newline characters after reading integers or other non-char types.
+
+cpp
+
+std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+getline(): Unlike cin, which stops reading input at whitespace, getline() is used to read an entire line of text, making it suitable for string inputs with spaces.
+
+cpp
+
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string fullName;
+    std::cout << "Enter your full name: ";
+    std::getline(std::cin, fullName);
+    std::cout << "Hello, " << fullName << "!" << std::endl;
+    return 0;
+}
+Additional Tips
+Mixing cin with getline(): When cin is used before getline(), the newline character left by cin can cause getline() to terminate immediately. Using cin.ignore() helps to clear the buffer in such cases.
+cpp
+
+#include <iostream>
+#include <string>
+
+int main() {
+    int age;
+    std::string name;
+
+    std::cout << "Enter your age: ";
+    std::cin >> age;
+    std::cin.ignore();  // clear the newline character
+
+    std::cout << "Enter your name: ";
+    std::getline(std::cin, name);
+
+    std::cout << "Name: " << name << ", Age: " << age << std::endl;
+    return 0;
+}
+For more detailed explanations, exercises, and demonstrations, please check out the full video lecture.
+
+Watch the above-attached video for more and complete information.
+
+For practicing these concepts, visit the online compiler: CodeHelp Quick Compiler.
