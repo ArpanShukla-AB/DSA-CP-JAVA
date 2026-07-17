@@ -699,3 +699,51 @@ It's recommended to use this Online Compiler for hands-on practice and debugging
 Important:
 Ensure you watch the attached instructional video for comprehensive coverage and additional examples.
 By the end of this lecture, students should have a robust understanding of handling operators in C++, enabling them to perform complex calculations and implement logical conditions effectively within their programs.
+
+
+
+
+Lecture Summary
+This lecture delves into the Binary and Decimal Number Systems, foundational components in the world of computer science and everyday arithmetic. Understanding these systems is crucial for digital computations and conversions.
+
+Binary Number System
+Definition: A way of representing numbers using only two digits: 0 and 1. Each digit is referred to as a bit.
+Base: The binary system is base-2.
+Usage: Widely used in computing and digital electronics because any value can be represented in binary using sequences of bits.
+Example: The binary number 1010 is equal to the decimal number 10.
+Explanation:
+To convert binary 1010 to decimal:
+(1 * 2^3) + (0 * 2^2) + (1 * 2^1) + (0 * 2^0)
+= 8 + 0 + 2 + 0
+= 10
+Decimal Number System
+Definition: The standard system for denoting integer and non-integer numbers, using digits 0 through 9.
+Base: The decimal system is base-10.
+Usage: Common in everyday life operations such as counting and monetary transactions.
+Conversion Between the Two Systems
+1. Binary to Decimal Conversion:
+
+Multiply each bit by 2 raised to the power of its position index (starting from 0 at the rightmost side).
+Sum all these values to get the decimal equivalent.
+Example: Convert binary 1101 to decimal:
+
+
+(1 * 2^3) + (1 * 2^2) + (0 * 2^1) + (1 * 2^0)
+= 8 + 4 + 0 + 1
+= 13
+2. Decimal to Binary Conversion:
+
+Divide the number by 2.
+Write down the remainder.
+Continue with the quotient until it is zero.
+The binary number is the sequence of remainders read from bottom to top.
+Example: Convert decimal 13 to binary:
+
+
+13 / 2 = 6 remainder 1
+6 / 2 = 3 remainder 0
+3 / 2 = 1 remainder 1
+1 / 2 = 0 remainder 1
+Binary representation: 1101
+
+For more comprehensive explanations and examples, refer to the accompanying video. It provides visualization and further elaborates on these concepts to enhance your understanding.
