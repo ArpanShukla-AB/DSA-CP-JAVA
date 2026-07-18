@@ -801,3 +801,91 @@ Note: While implicit conversions can simplify code, explicit conversions provide
 For practice and to test these concepts, use an online IDE such as CodeHelp Quick Compiler.
 
 Please watch the above attached video to gain a more enriched and complete understanding of typecasting in C++.
+
+
+
+Lecture Summary
+In this lecture, we delve into the concept of Functions in C++, focusing on distinguishing between arguments and parameters, and understanding call by value versus call by reference mechanisms. These are foundational elements in C++, crucial for writing efficient and maintainable code.
+
+Functions in C++
+Functions in C++ are blocks of code designed to perform a specific task. Once a function is written, it can be reused multiple times in code, enhancing modularity and efficiency. Here’s a basic layout of how a function is structured:
+
+cpp
+
+// Function Declaration
+returnType functionName(parameter1, parameter2, ...);
+
+// Function Definition
+returnType functionName(parameter1Type parameter1, parameter2Type parameter2, ...) {
+    // Function body: code to be executed
+}
+Example:
+
+cpp
+
+#include <iostream>
+using namespace std;
+
+// Function Declaration and Definition
+int add(int a, int b) {
+    return a + b;    // Function body
+}
+
+int main() {
+    int sum = add(5, 3);  // Function Call
+    cout << "Sum: " << sum << endl;
+    return 0;
+}
+Arguments vs Parameters
+Parameters: Variables defined in the function definition are called parameters. They act as placeholders for the values that are passed during the function call.
+Arguments: The actual values that you pass to the function when you call it are known as arguments.
+Example to Illustrate:
+
+cpp
+
+int multiply(int x, int y) {  // x and y are parameters
+    return x * y;
+}
+
+int main() {
+    int result = multiply(4, 5);  // 4 and 5 are arguments
+    cout << "Product: " << result << endl;
+    return 0;
+}
+Call by Value vs Call by Reference
+Understanding these concepts is crucial for manipulating data efficiently:
+
+Call by Value: Copies the actual value of an argument into the formal parameter of the function. Changes made to the parameter inside the function have no effect on the argument.
+Code Example:
+
+cpp
+
+void modifyValue(int a) {
+    a = 100; // Changes made here won't affect the original
+}
+
+int main() {
+    int num = 20;
+    modifyValue(num);
+    cout << "Num after modifyValue: " << num << endl; // Output: 20
+    return 0;
+}
+Call by Reference: Copies the reference of an argument into the formal parameter. The function works with the original argument, and changes will reflect on the argument used in the call.
+Code Example:
+
+cpp
+
+void modifyReference(int &b) {
+    b = 100; // Changes here affect the original argument
+}
+
+int main() {
+    int num = 20;
+    modifyReference(num);
+    cout << "Num after modifyReference: " << num << endl; // Output: 100
+    return 0;
+}
+Watch the above attached video for more and complete information on these topics.
+
+Additional Resources
+Explore the implementation of these concepts with live coding through an online compiler: CodeHelp Quick Compiler
