@@ -16,22 +16,22 @@ using namespace std;
 //     cout << "Your age is: " << age << endl;
 
 
- void printCounting(){
-        for(int i = 1 ; i <=5 ; i++){
-            cout << i << endl;
-        }
-    }
+//  void printCounting(){
+//         for(int i = 1 ; i <=5 ; i++){
+//             cout << i << endl;
+//         }
+//     }
 
-int main(){
-    cout << "Hi" << endl;
+// int main(){
+//     cout << "Hi" << endl;
 
-    // for(int i = 1 ; i <=5 ;i++){
-    //     cout << i << endl;
-    printCounting();
-    printCounting();
+//     // for(int i = 1 ; i <=5 ;i++){
+//     //     cout << i << endl;
+//     printCounting();
+//     printCounting();
 
-     return 0;
-}
+//      return 0;
+// }
     
 
    
@@ -40,3 +40,13 @@ int main(){
 
     
    
+int sum(int a , int b){
+    return a+b;
+}
+
+int main(){
+    int ans = sum(3,5);
+    cout << "The sum is : " << ans<< endl;
+
+    return 0;
+}
