@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Arrays-Love-Babbar/Arrays-Love-Babbar.iml" filepath="$PROJECT_DIR$/Arrays-Love-Babbar/Arrays-Love-Babbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/CP-JAVA-DSA.iml" filepath="$PROJECT_DIR$/.idea/CP-JAVA-DSA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA-PREPCODING/DSA-PREPCODING.iml" filepath="$PROJECT_DIR$/DSA-PREPCODING/DSA-PREPCODING.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dinesh-varyani/Dinesh-varyani.iml" filepath="$PROJECT_DIR$/Dinesh-varyani/Dinesh-varyani.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA-PREPCODING/Functions-Array/Functions-Array.iml" filepath="$PROJECT_DIR$/DSA-PREPCODING/Functions-Array/Functions-Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hotel-Reservation-System/Hotel-Reservation-System.iml" filepath="$PROJECT_DIR$/Hotel-Reservation-System/Hotel-Reservation-System.iml" />
+    </modules>
+  </component>
+</project>

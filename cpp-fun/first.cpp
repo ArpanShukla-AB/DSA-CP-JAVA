@@ -7,6 +7,7 @@ using namespace std;
 // }
 
 
+<<<<<<< HEAD
 // int main(){
 //     int age;
 
@@ -48,5 +49,16 @@ int main(){
     int ans = sum(3,5);
     cout << "The sum is : " << ans<< endl;
 
+=======
+int main(){
+    int age;
+
+    cout << "Enter your age: " << endl;
+
+    cin >> age;
+    cout << "Your age is: " << age << endl;
+
+    
+>>>>>>> aedaa5cd84f1815291a27932c98e3c7e639a93bc
     return 0;
 }
